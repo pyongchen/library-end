@@ -5,3 +5,5 @@ let config = {
   port: '3306',
   database: 'Library'
 };
+
+module.exports = config;
