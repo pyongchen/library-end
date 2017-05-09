@@ -1,0 +1,9 @@
+{
+  "apps": [{
+    "name": "library",
+    "script": "./src/app/server.js",
+    "watch": true,
+    "ignore_watch": ["*.log", "yarn.lock", "node_module", "pm2-app.json", ".idea"],
+    "force": true
+  }]
+}

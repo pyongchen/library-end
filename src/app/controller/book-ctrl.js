@@ -65,15 +65,16 @@ let data = [
 ;
 
 module.exports.getOne = (req, res) => {
-  let id = req.query.id.toString();
-  console.log(id);
+  let id = req.query.id;
   for(let i = 0; i < data.length; i++) {
-    if(data[i].id === id) {
+    if(data[i].id === id.toString()) {
       res.json(data[i]);
     }
   }
+  res.end("未找到");
 };
 
 module.exports.getAll = (req, res) => {
+  console.log("123");
   res.json(data)
 };
