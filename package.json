@@ -8,7 +8,9 @@
     "express-session": "^1.15.2",
     "gulp": "^3.9.1",
     "gulp-develop-server": "^0.5.2",
-    "mysql": "^2.13.0"
+    "method-override": "^2.3.8",
+    "mysql": "^2.13.0",
+    "serve-favicon": "^2.4.2"
   },
   "name": "library-end",
   "version": "1.0.0",

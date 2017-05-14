@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "num": "222",
+      "author": "哈拉鱼1",
+      "name": "可爱学",
+      "publisher": "机械工业出版社",
+      "picture": "halayu1.jpg",
+      "type": "类别",
+      "buy_time": "2017-04-10",
+      "school": "东校区"
+    },
+    {
+      "num": "222",
+      "author": "哈拉鱼2",
+      "name": "可爱学",
+      "publisher": "机械工业出版社",
+      "picture": "halayu2.jpg",
+      "type": "类别",
+      "buy_time": "2017-04-10",
+      "school": "东校区"
+    },
+    {
+      "num": "222",
+      "author": "哈拉鱼3",
+      "name": "可爱学",
+      "publisher": "机械工业出版社",
+      "picture": "halayu3.jpg",
+      "type": "类别",
+      "buy_time": "2017-04-10",
+      "school": "东校区"
+    },
+    {
+      "num": "222",
+      "author": "哈拉鱼3",
+      "name": "可爱学",
+      "publisher": "机械工业出版社",
+      "picture": "halayu4.jpg",
+      "type": "类别",
+      "buy_time": "2017-04-10",
+      "school": "东校区"
+    },
+    {
+      "num": "222",
+      "author": "哈拉鱼3",
+      "name": "可爱学",
+      "publisher": "机械工业出版社",
+      "picture": "halayu5.jpg",
+      "type": "类别",
+      "buy_time": "2017-04-10",
+      "school": "东校区"
+    }
+  ]
+}
