@@ -19,8 +19,18 @@ function User() {
     })
   };
 
-  this.getUserByNumber = function (number) {
-    let query = `select * from ${this.name} where number = ${number}`;
+  this.getUserByNumber = (number) => {
+    let query = `select * from ${name} where number = ${number}`;
+    return new Promise((resolve, reject) => {
+      conn.query(query, (err, res) => {
+        if(err) reject(err);
+        else resolve(res[0]);
+      })
+    })
+  };
+
+  this.deleteUser = (number) => {
+    let query = `delete from user where number = ${number}`;
     return new Promise((resolve, reject) => {
       conn.query(query, (err, res) => {
         if(err) reject(err);

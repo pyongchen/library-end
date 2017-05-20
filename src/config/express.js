@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, '../views'));
 app.engine('html', ejs.__express);
 app.set('view engine', 'html');
 
-app.use('/static', express.static(path.join(__dirname,'../static')));
+app.use('/static', express.static(path.join(__dirname,'../../static')));
 
 //设置中间件
 // app.use(cors());  //跨域
@@ -38,7 +38,7 @@ app.use(session({     //设置session
   name: 'library',
   secret: 'library',
   cookie: {
-    maxAge: 1000* 60* 30    //过期时间:30分钟
+    maxAge: 1000* 60* 60 * 2   //过期时间:2小时
   }
 }));
 

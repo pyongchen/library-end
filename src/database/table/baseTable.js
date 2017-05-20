@@ -39,7 +39,9 @@ BaseTable.prototype.insert = function (records) {
   //遍历值, 先遍历每条记录，再遍历记录中的每个值
   records.forEach((record) => {
     insertSQL += '(';
-    for(let key in record) insertSQL += `'${record[key]}',`;
+    for(let i = 0; i < this.keys.length; i++) {
+      insertSQL += `'${record[this.keys[i]]}',`;
+    }
     insertSQL = insertSQL.substring(0, insertSQL.length - 1) + '),';
   });
 

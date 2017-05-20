@@ -5,7 +5,3 @@ module.exports.user = (req, res) => {
     res.json({user: result});
   })
 }
-
-module.exports.all = (req, res) => {
-  
-}
