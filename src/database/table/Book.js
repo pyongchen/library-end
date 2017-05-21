@@ -6,7 +6,17 @@ let conn = require('../conn');
  */
 function Book() {
   let name = 'Book';
-  let keys = ['number', 'author', 'name', 'publisher','picture', 'type', 'reserved', 'buy_time','school',];
+  let keys = [
+    { vaL: 'number', type: 'int', },
+    { vaL: 'author', type: 'varchr(200)', },
+    { vaL: 'name', type: 'varchr(200)', },
+    { vaL: 'publisher', type: 'varchr(200)', },
+    { vaL: 'picture', type: 'varchr(200)', },
+    { vaL: 'type', type: 'varchr(200)', },
+    { vaL: 'reserved', type: 'int', },
+    { vaL: 'buy_time', type: 'date', },
+    { vaL: 'school', type: 'varchar(200)', },
+  ]
   BaseTable.call(this, name, keys);
 
   this.getOne = (number) => {
@@ -30,6 +40,29 @@ function Book() {
       conn.query(query, (err, res) => {
         if(err) reject(err);
         else resolve(res);
+      })
+    })
+  }
+
+  this.deleteBookByNumber = (number) => {
+    let query = `delete from ${name} where number=${number}`
+    return new Promise((resolve, rejecr) => {
+      conn.query(query, (err, res) => {
+        if(err) reject(err);
+        else resolve(res[0]);
+      })
+    })
+  },
+
+  this.updateBookByNumber = (fields) => {
+    let query = `update ${name} set `;
+    for(let key in fields) query += (key + '=' + fields[key] + ',')
+    query = query.substring(0, query.length - 1)
+    query += ' where number = ' + fields.number + ';'
+    return new Promise((resolve, rejecr) => {
+      conn.query(query, (err, res) => {
+        if(err) reject(err);
+        else resolve(res[0]);
       })
     })
   }

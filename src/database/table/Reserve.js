@@ -2,16 +2,15 @@ let BaseTable = require('./baseTable');
 let conn = require('../conn');
 
 /**
- * 管理员编号，密码，姓名，性别，邮箱
+ *  图书预约表，读者编号，借阅时间，是否归还
  */
-function Admin() {
-  let name = 'Admin';
+function Reserve() {
+  let name = 'Reserve';
   let keys = [
-    { vaL: 'number', type: 'int', },
-    { vaL: 'password', type: 'varchr(200)', },
-    { vaL: 'name', type: 'varchr(200)', },
-    { vaL: 'sex', type: 'varchr(200)', },
-    { vaL: 'mail', type: 'varchr(200)', },
+    { val: 'user_number', type: 'int', },
+    { val: 'book_number', type: 'int', },
+    { val: 'reserve_time', type: 'date', },
+    { val: 'isReturn', type: 'int', }
   ]
   BaseTable.call(this, name, keys);
 
@@ -26,7 +25,7 @@ function Admin() {
   }
 }
 
-Admin.prototype = new BaseTable();
-Admin.prototype.constructor = Admin;
+Reserve.prototype = new BaseTable();
+Reserve.prototype.constructor = Reserve;
 
-module.exports = new Admin();
+module.exports = new Reserve();

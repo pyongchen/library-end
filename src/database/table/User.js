@@ -6,7 +6,14 @@ let conn = require('../conn');
  */
 function User() {
   let name = 'User';
-  let keys = ['number', 'password', 'name', 'college', 'sex', 'mail'];
+  let keys = [
+    { vaL: 'number', type: 'int', },
+    { vaL: 'password', type: 'varchr(200)', },
+    { vaL: 'name', type: 'varchr(200)', },
+    { vaL: 'college', type: 'varchr(200)', },
+    { vaL: 'sex', type: 'varchr(200)', },
+    { vaL: 'mail', type: 'varchr(200)', },
+  ]
   BaseTable.call(this, name, keys);
 
   this.getAll = () => {

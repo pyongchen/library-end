@@ -8,11 +8,14 @@ function BaseTable(name, keys) {
   this.keys = keys;
 }
 
+/*  创建数据表
+  根据每个表的keys中的val、type创建
+ */
 BaseTable.prototype.create = function () {
   let create = `create table if not exists ${this.name} (
     id int(11) not null auto_increment, `;
   for(let i = 0; i < this.keys.length; i++)
-    create += this.keys[i] + ' varchar(200), ';
+    create += this.keys[i].val + ' ' + this.keys[i].type + ', ';
   create += 'primary key (id)) ';
   create += 'ENGINE=InnoDB DEFAULT CHARSET=utf8';
   console.log(create);
@@ -32,7 +35,7 @@ BaseTable.prototype.insert = function (records) {
   // 遍历键
   let insertSQL = `insert into ${this.name} (`;
   this.keys.forEach((key) => {
-    insertSQL += `${key},`;
+    insertSQL += `${key.val},`;
   });
   insertSQL = insertSQL.substring(0, insertSQL.length - 1) + ')values ';
 
@@ -40,7 +43,7 @@ BaseTable.prototype.insert = function (records) {
   records.forEach((record) => {
     insertSQL += '(';
     for(let i = 0; i < this.keys.length; i++) {
-      insertSQL += `'${record[this.keys[i]]}',`;
+      insertSQL += `'${record[this.keys[i].val]}',`;
     }
     insertSQL = insertSQL.substring(0, insertSQL.length - 1) + '),';
   });
