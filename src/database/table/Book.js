@@ -42,7 +42,7 @@ function Book() {
         else resolve(res);
       })
     })
-  }
+  };
 
   this.deleteBookByNumber = (number) => {
     let query = `delete from ${name} where number=${number}`
@@ -52,14 +52,14 @@ function Book() {
         else resolve(res[0]);
       })
     })
-  },
+  };
 
   this.updateBookByNumber = (fields) => {
     let query = `update ${name} set `;
-    for(let key in fields) query += (key + '=' + fields[key] + ',')
+    for(let key in fields) query += (key + "='" + fields[key] + "',")
     query = query.substring(0, query.length - 1)
     query += ' where number = ' + fields.number + ';'
-    return new Promise((resolve, rejecr) => {
+    return new Promise((resolve, reject) => {
       conn.query(query, (err, res) => {
         if(err) reject(err);
         else resolve(res[0]);

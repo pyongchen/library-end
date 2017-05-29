@@ -67,7 +67,7 @@ module.exports.createBook = (req, res) => {
 
 // 更新图书
 module.exports.updateBook = (req, res) => {
-  Book.updateOneByNumber(req.query).then(() => {
+  Book.updateBookByNumber(req.body).then(() => {
     res.json({msg: '更新成功'});
   })
 }

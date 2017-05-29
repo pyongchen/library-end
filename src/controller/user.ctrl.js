@@ -10,7 +10,15 @@ module.exports.user = (req, res) => {
   User.getUserByNumber(req.query.number).then((result) => {
     res.json({user: result});
   })
-}
+};
+
+// 更新个人信息
+module.exports.update = (req, res) => {
+  User.update(req.body).then((user) => {
+    req.session.user = user;
+    res.json({msg: '更新成功'});
+  })
+};
 
 // 借阅图书，提供读者编号和图书编号
 module.exports.reserve = (req, res) => {

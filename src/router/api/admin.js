@@ -8,6 +8,6 @@ module.exports = () => {
   router.get('/users', admin.users);
   router.get('/deleteUser', admin.deleteUser);
   router.post('/createBook', admin.createBook);
-  router.get('/updateBook', admin.updateBook);
+  router.post('/updateBook', admin.updateBook);
   return router
 };

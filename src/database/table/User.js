@@ -44,6 +44,22 @@ function User() {
         else resolve(res[0]);
       })
     })
+  };
+
+  this.update = (fields) => {
+    let query = `update ${name} set `;
+    for(let key in fields) query += (key + "='" + fields[key] + "',")
+    query = query.substring(0, query.length - 1);
+    query += ' where number = ' + fields.number + ';';
+    console.log(query);
+    return new Promise((resolve, reject) => {
+      conn.query(query, (err, res) => {
+        if(err) reject(err);
+        else this.getUserByNumber(fields.number).then((user) => {
+          resolve(user)
+        })
+      })
+    })
   }
 }
 
