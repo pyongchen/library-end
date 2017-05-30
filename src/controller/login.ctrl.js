@@ -30,10 +30,10 @@ module.exports.signUp = (req, res) => {
   let user = {
     number: req.body.number,
     password: req.body.password,
-    name: 'XXX',
-    college: 'XXX',
+    name: '读者',
+    school: '东校区',
     sex: '男',
-    mail: 'XXXXXX.com'
+    mail: '123123123.com'
   };
   User.insert([user]).then( ()=> {
     console.log('插入读者:' + req.body.number + '成功');

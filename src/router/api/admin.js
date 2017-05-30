@@ -9,5 +9,7 @@ module.exports = () => {
   router.get('/deleteUser', admin.deleteUser);
   router.post('/createBook', admin.createBook);
   router.post('/updateBook', admin.updateBook);
+  router.post('/deleteBook', admin.deleteBook);
+  router.post('/addToBlackList', admin.addToBlackList);
   return router
 };

@@ -3,6 +3,7 @@ let Admin = require('../database/table/Admin');
 let Book = require('../database/table/Book');
 let Reserve = require('../database/table/Reserve');
 let Problem = require('../database/table/Problem');
+let BlackList = require('../database/table/BlackList');
 
 let users = [
   {number: 100, password: 100100, name: '张三', college: '资讯管理学院', sex: '男', mail: 'abc.com'},
@@ -32,28 +33,28 @@ let data = [
   ]
 ;
 
-let problems = [
-  {title: '以下哪项不是中大校训', number: 1, selects: '博学,审问,慎思,黄赌毒', answer: 1},
-  {title: '以下哪项不是中大校训', number: 2, selects: '博学,审问,慎思,黄赌毒', answer: 2},
-  {title: '以下哪项不是中大校训', number: 3, selects: '博学,审问,慎思,黄赌毒', answer: 1},
-  {title: '以下哪项不是中大校训', number: 4, selects: '博学,审问,慎思,黄赌毒', answer: 4},
-  {title: '以下哪项不是中大校训', number: 5, selects: '博学,审问,慎思,黄赌毒', answer: 3},
-  {title: '以下哪项不是中大校训', number: 6, selects: '博学,审问,慎思,黄赌毒', answer: 2},
-  {title: '以下哪项不是中大校训', number: 7, selects: '博学,审问,慎思,黄赌毒', answer: 2},
-  {title: '以下哪项不是中大校训', number: 8, selects: '博学,审问,慎思,黄赌毒', answer: 3},
-  {title: '以下哪项不是中大校训', number: 9, selects: '博学,审问,慎思,黄赌毒', answer: 2},
-  {title: '以下哪项不是中大校训', number: 10, selects: '博学,审问,慎思,黄赌毒', answer: 2},
-  {title: '以下哪项不是中大校训', number: 11, selects: '博学,审问,慎思,黄赌毒', answer: 1},
-  {title: '以下哪项不是中大校训', number: 12, selects: '博学,审问,慎思,黄赌毒', answer: 1},
-  {title: '以下哪项不是中大校训', number: 13, selects: '博学,审问,慎思,黄赌毒', answer: 4},
-  {title: '以下哪项不是中大校训', number: 14, selects: '博学,审问,慎思,黄赌毒', answer: 3},
-  {title: '以下哪项不是中大校训', number: 15, selects: '博学,审问,慎思,黄赌毒', answer: 3},
-  {title: '以下哪项不是中大校训', number: 16, selects: '博学,审问,慎思,黄赌毒', answer: 1},
-  {title: '以下哪项不是中大校训', number: 17, selects: '博学,审问,慎思,黄赌毒', answer: 3},
-  {title: '以下哪项不是中大校训', number: 18, selects: '博学,审问,慎思,黄赌毒', answer: 4},
-  {title: '以下哪项不是中大校训', number: 19, selects: '博学,审问,慎思,黄赌毒', answer: 1},
-  {title: '以下哪项不是中大校训', number: 20, selects: '博学,审问,慎思,黄赌毒', answer: 4},
-]
+// let problems = [
+//   {title: '以下哪项不是中大校训', number: 1, selects: '博学,审问,慎思,黄赌毒', answer: 1},
+//   {title: '以下哪项不是中大校训', number: 2, selects: '博学,审问,慎思,黄赌毒', answer: 2},
+//   {title: '以下哪项不是中大校训', number: 3, selects: '博学,审问,慎思,黄赌毒', answer: 1},
+//   {title: '以下哪项不是中大校训', number: 4, selects: '博学,审问,慎思,黄赌毒', answer: 4},
+//   {title: '以下哪项不是中大校训', number: 5, selects: '博学,审问,慎思,黄赌毒', answer: 3},
+//   {title: '以下哪项不是中大校训', number: 6, selects: '博学,审问,慎思,黄赌毒', answer: 2},
+//   {title: '以下哪项不是中大校训', number: 7, selects: '博学,审问,慎思,黄赌毒', answer: 2},
+//   {title: '以下哪项不是中大校训', number: 8, selects: '博学,审问,慎思,黄赌毒', answer: 3},
+//   {title: '以下哪项不是中大校训', number: 9, selects: '博学,审问,慎思,黄赌毒', answer: 2},
+//   {title: '以下哪项不是中大校训', number: 10, selects: '博学,审问,慎思,黄赌毒', answer: 2},
+//   {title: '以下哪项不是中大校训', number: 11, selects: '博学,审问,慎思,黄赌毒', answer: 1},
+//   {title: '以下哪项不是中大校训', number: 12, selects: '博学,审问,慎思,黄赌毒', answer: 1},
+//   {title: '以下哪项不是中大校训', number: 13, selects: '博学,审问,慎思,黄赌毒', answer: 4},
+//   {title: '以下哪项不是中大校训', number: 14, selects: '博学,审问,慎思,黄赌毒', answer: 3},
+//   {title: '以下哪项不是中大校训', number: 15, selects: '博学,审问,慎思,黄赌毒', answer: 3},
+//   {title: '以下哪项不是中大校训', number: 16, selects: '博学,审问,慎思,黄赌毒', answer: 1},
+//   {title: '以下哪项不是中大校训', number: 17, selects: '博学,审问,慎思,黄赌毒', answer: 3},
+//   {title: '以下哪项不是中大校训', number: 18, selects: '博学,审问,慎思,黄赌毒', answer: 4},
+//   {title: '以下哪项不是中大校训', number: 19, selects: '博学,审问,慎思,黄赌毒', answer: 1},
+//   {title: '以下哪项不是中大校训', number: 20, selects: '博学,审问,慎思,黄赌毒', answer: 4},
+// ]
 
 // let reserves = [
 //   { user_number: 100, book_number: 111, reserve_time: '2017-02-20', isReturn: 0},
@@ -61,6 +62,10 @@ let problems = [
 //   { user_number: 100, book_number: 113, reserve_time: '2017-03-24', isReturn: 0},
 //   { user_number: 100, book_number: 114, reserve_time: '2017-04-09', isReturn: 0},
 // ]
+
+let blackList = [
+  {}
+];
 
 // User.create().then(() => {
 //   User.insert(users).then(() => {
@@ -94,10 +99,10 @@ let problems = [
 //   })
 // })
 
-Problem.create().then(() => {
-  Problem.insert(problems).then(() => {
-    console.log('插入Book成功')
-  }).catch((err) => {
-    console.log("插入Book失败",err)
-  })
-})
+// Problem.create().then(() => {
+//   Problem.insert(problems).then(() => {
+//     console.log('插入Book成功')
+//   }).catch((err) => {
+//     console.log("插入Book失败",err)
+//   })
+// })

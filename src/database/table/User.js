@@ -7,12 +7,12 @@ let conn = require('../conn');
 function User() {
   let name = 'User';
   let keys = [
-    { vaL: 'number', type: 'int', },
-    { vaL: 'password', type: 'varchr(200)', },
-    { vaL: 'name', type: 'varchr(200)', },
-    { vaL: 'college', type: 'varchr(200)', },
-    { vaL: 'sex', type: 'varchr(200)', },
-    { vaL: 'mail', type: 'varchr(200)', },
+    { val: 'number', type: 'int', },
+    { val: 'password', type: 'varchr(200)', },
+    { val: 'name', type: 'varchr(200)', },
+    { val: 'school', type: 'varchr(200)', },
+    { val: 'sex', type: 'varchr(200)', },
+    { val: 'mail', type: 'varchr(200)', },
   ]
   BaseTable.call(this, name, keys);
 

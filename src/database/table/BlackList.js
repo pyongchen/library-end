@@ -2,15 +2,17 @@ let BaseTable = require('./baseTable');
 let conn = require('../conn');
 
 /**
- * 黑名单，读者编号
+ * 读者编号，备注信息
  */
 function BlackList() {
   let name = 'BlackList';
   let keys = [
-    { val: 'number', type: 'int', },
-  ]
+    { val: 'number', type: 'int'},
+    { val: 'message', type: 'varchar(200)'}
+  ];
   BaseTable.call(this, name, keys);
 
+  // 获取所有黑名单
   this.getAll = () => {
     let query = `select * from ${name}`;
     return new Promise((resolve, reject) => {
@@ -30,7 +32,7 @@ function BlackList() {
         else resolve(res[0]);
       })
     })
-  }
+  };
 
   // 根据读者编号解除黑名单
   this.deleteByNumber = (number) => {

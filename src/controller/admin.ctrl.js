@@ -1,6 +1,7 @@
 let Admin = require('../database/table/Admin');
 let User = require('../database/table/User');
 let Book = require('../database/table/Book');
+let BlackList = require('../database/table/BlackList');
 let uploader = require('../tools/uploader');
 let format = require('../tools/date').format;
 
@@ -48,7 +49,7 @@ module.exports.deleteUser = (req, res) => {
   User.deleteUser(number).then(() => {
     return res.json({msg: true});
   })
-}
+};
 
 // 创建图书
 module.exports.createBook = (req, res) => {
@@ -68,13 +69,18 @@ module.exports.createBook = (req, res) => {
 // 更新图书
 module.exports.updateBook = (req, res) => {
   Book.updateBookByNumber(req.body).then(() => {
-    res.json({msg: '更新成功'});
+    return res.json({msg: '更新成功'});
   })
-}
+};
 
 // 删除图书
 module.exports.deleteBook = (req, res) => {
-  Book.deleteBookByNumber(req.query.numebr).then(() => {
-    res.json({msg: '删除成功'});
+  Book.deleteBookByNumber(req.body.number).then(() => {
+    return res.json({msg: '删除成功'});
   })
-}
+};
+
+// 拉入黑名单
+module.exports.addToBlackList = (req, res) => {
+  BlackList
+};
