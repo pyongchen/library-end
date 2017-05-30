@@ -35,7 +35,7 @@ function BlackList() {
   };
 
   // 根据读者编号解除黑名单
-  this.deleteByNumber = (number) => {
+  this.removeByNumber = (number) => {
     let query = `delete from ${name} where number = ${number};`;
     return new Promise((resolve, reject) => {
       conn.query(query, (err, res) => {
@@ -43,7 +43,7 @@ function BlackList() {
         else resolve(res);
       })
     })   
-  }
+  };
 }
 
 BlackList.prototype = new BaseTable();

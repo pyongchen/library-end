@@ -31,17 +31,20 @@ module.exports.signUp = (req, res) => {
     number: req.body.number,
     password: req.body.password,
     name: '读者',
-    school: '东校区',
+    school: '数据科学与计算机学院',
     sex: '男',
     mail: '123123123.com'
   };
-  User.insert([user]).then( ()=> {
-    console.log('插入读者:' + req.body.number + '成功');
-    return res.end();
-  }).catch((err) => {
-    console.log(err);
-    return res.end();
-  });
+  User.getUserByNumber(user.number).then((result) => {
+    if(!result) {
+      User.insert([user]).then( ()=> {
+        console.log('插入读者:' + req.body.number + '成功');
+        return res.json({msg: '注册成功！'});
+      });
+    } else {
+      return res.json({err: '编号已被注册，请更换！'})
+    }
+  })
 };
 
 // 退出

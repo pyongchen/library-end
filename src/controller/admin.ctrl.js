@@ -36,9 +36,9 @@ module.exports.logOut = (req, res) => {
   return res.json({msg: '退出成功'})
 }
 
-//获取所有用户
+//获取所有正常用户或者黑名单用户
 module.exports.users = (req, res) => {
-  User.getAll().then((result) => {
+  User.getAll(req.query.flag).then((result) => {
     return res.json(result)
   })
 }
@@ -82,5 +82,13 @@ module.exports.deleteBook = (req, res) => {
 
 // 拉入黑名单
 module.exports.addToBlackList = (req, res) => {
-  BlackList
+  BlackList.insert([req.body]).then(() => {
+    return res.json({msg: '添加成功'})
+  })
+};
+
+module.exports.removeFromBlackList = (req, res) => {
+  BlackList.removeByNumber(req.body.number).then(() => {
+    return res.json({msg: '解除黑名单成功！'});
+  })
 };

@@ -64,7 +64,11 @@ let data = [
 // ]
 
 let blackList = [
-  {}
+  {number: 100, message: '快快还书！'},
+  {number: 111, message: '把书换回来！'},
+  {number: 100, message: '怎么还不还书'},
+  {number: 555, message: '快还书，别人还要看的'},
+  {number: 888, message: '再不还书你将被永久拉黑'},
 ];
 
 // User.create().then(() => {
@@ -106,3 +110,11 @@ let blackList = [
 //     console.log("插入Book失败",err)
 //   })
 // })
+
+BlackList.create().then(() => {
+  BlackList.insert(blackList).then(() => {
+    console.log('插入BlackList成功')
+  }).catch((err) => {
+    console.log("插入BlackList失败",err)
+  })
+})

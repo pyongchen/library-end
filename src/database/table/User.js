@@ -16,8 +16,10 @@ function User() {
   ]
   BaseTable.call(this, name, keys);
 
-  this.getAll = () => {
-    let query = `select * from ${name}`;
+  // 0表示正常用户，1表示黑名单用户
+  this.getAll = (flag) => {
+    let query = `select * from ${name} where number ${flag == 0 ? 'not': ''} in 
+    (select number from blacklist)`;
     return new Promise((resolve, reject) => {
       conn.query(query, (err, res) => {
         if(err) reject(err);

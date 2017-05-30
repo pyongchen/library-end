@@ -2,34 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="fadd9054-1333-4748-8b48-fdfadb695f48" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/134961316420788.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/halayu1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/halayu2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/halayu3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/halayu4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/halayu5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/图片 1.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic1.png" afterPath="$PROJECT_DIR$/static/cover/pic1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic10.png" afterPath="$PROJECT_DIR$/static/cover/pic10.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic11.png" afterPath="$PROJECT_DIR$/static/cover/pic11.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic12.png" afterPath="$PROJECT_DIR$/static/cover/pic12.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic2.png" afterPath="$PROJECT_DIR$/static/cover/pic2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic3.png" afterPath="$PROJECT_DIR$/static/cover/pic3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic4.png" afterPath="$PROJECT_DIR$/static/cover/pic4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic5.png" afterPath="$PROJECT_DIR$/static/cover/pic5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic6.png" afterPath="$PROJECT_DIR$/static/cover/pic6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic7.png" afterPath="$PROJECT_DIR$/static/cover/pic7.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic8.png" afterPath="$PROJECT_DIR$/static/cover/pic8.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/pic9.png" afterPath="$PROJECT_DIR$/static/cover/pic9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/admin.ctrl.js" afterPath="$PROJECT_DIR$/src/controller/admin.ctrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/login.ctrl.js" afterPath="$PROJECT_DIR$/src/controller/login.ctrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/table/BlackList.js" afterPath="$PROJECT_DIR$/src/database/table/BlackList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/table/Book.js" afterPath="$PROJECT_DIR$/src/database/table/Book.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/table/User.js" afterPath="$PROJECT_DIR$/src/database/table/User.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router/api/admin.js" afterPath="$PROJECT_DIR$/src/router/api/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tools/uploader.js" afterPath="$PROJECT_DIR$/src/tools/uploader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/generate.js" afterPath="$PROJECT_DIR$/src/utils/generate.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -50,8 +27,8 @@
           <file leaf-file-name="uploader.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/tools/uploader.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+                <state relative-caret-position="340">
+                  <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -60,18 +37,18 @@
           <file leaf-file-name="admin.ctrl.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/controller/admin.ctrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+                <state relative-caret-position="833">
+                  <caret line="90" column="6" lean-forward="true" selection-start-line="90" selection-start-column="6" selection-end-line="90" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="User.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/database/table/User.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="901">
-                  <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+                <state relative-caret-position="374">
+                  <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
@@ -80,8 +57,8 @@
           <file leaf-file-name="signIn.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/router/api/signIn.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -90,22 +67,19 @@
           <file leaf-file-name="login.ctrl.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/controller/login.ctrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+                <state relative-caret-position="626">
+                  <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BlackList.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="BlackList.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/database/table/BlackList.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-                  <folding>
-                    <marker date="1496116168000" expanded="true" signature="114:1096" ph="{...}" />
-                    <marker date="1496116168000" expanded="true" signature="155:239" ph="[...]" />
-                  </folding>
+                <state relative-caret-position="425">
+                  <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -113,18 +87,8 @@
           <file leaf-file-name="generate.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/utils/generate.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="52" column="35" lean-forward="false" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="baseTable.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/database/table/baseTable.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                <state relative-caret-position="1012">
+                  <caret line="109" column="34" lean-forward="true" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -147,8 +111,8 @@
           <file leaf-file-name="admin.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/router/api/admin.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+                <state relative-caret-position="221">
+                  <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
@@ -158,7 +122,17 @@
             <entry file="file://$PROJECT_DIR$/src/database/table/Book.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="170">
-                  <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+                  <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="baseTable.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/database/table/baseTable.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="398">
+                  <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -213,12 +187,12 @@
         <option value="$PROJECT_DIR$/src/controller/user.ctrl.js" />
         <option value="$PROJECT_DIR$/src/tools/uploader.js" />
         <option value="$PROJECT_DIR$/src/database/table/Book.js" />
-        <option value="$PROJECT_DIR$/src/router/api/admin.js" />
-        <option value="$PROJECT_DIR$/src/database/table/BlackList.js" />
         <option value="$PROJECT_DIR$/src/utils/generate.js" />
         <option value="$PROJECT_DIR$/src/controller/login.ctrl.js" />
         <option value="$PROJECT_DIR$/src/database/table/User.js" />
+        <option value="$PROJECT_DIR$/src/router/api/admin.js" />
         <option value="$PROJECT_DIR$/src/controller/admin.ctrl.js" />
+        <option value="$PROJECT_DIR$/src/database/table/BlackList.js" />
       </list>
     </option>
   </component>
@@ -472,7 +446,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.login.ctrl.js">
+  <component name="RunManager" selected="Node.js.generate.js (1)">
     <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/src/app">
       <method />
     </configuration>
@@ -483,6 +457,9 @@
       <method />
     </configuration>
     <configuration default="false" name="login.ctrl.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="login.ctrl.js" working-dir="$PROJECT_DIR$/src/app/controller">
+      <method />
+    </configuration>
+    <configuration default="false" name="generate.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="generate.js" working-dir="$PROJECT_DIR$/src/utils">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -551,18 +528,20 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.home-ctrl.js" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.generate.js" />
       <item index="3" class="java.lang.String" itemvalue="Node.js.login.ctrl.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.generate.js (1)" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.login.ctrl.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.generate.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.home-ctrl.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.server.js" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.generate.js (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.login.ctrl.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.generate.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.home-ctrl.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.server.js" />
       </list>
     </recent_temporary>
   </component>
@@ -591,7 +570,7 @@
       <workItem from="1493356231995" duration="16246000" />
       <workItem from="1493619299073" duration="2325000" />
       <workItem from="1494136406134" duration="19309000" />
-      <workItem from="1496060025906" duration="14385000" />
+      <workItem from="1496060025906" duration="19618000" />
     </task>
     <task id="LOCAL-00001" summary="添加gulp启动和监听">
       <created>1492408459126</created>
@@ -604,7 +583,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78011000" />
+    <option name="totallyTimeSpent" value="83244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-36" y="-1418" width="2130" height="1418" extended-state="0" />
@@ -613,9 +592,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42125604" sideWeight="0.5050437" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796133" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.260181" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23755656" sideWeight="0.49461642" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23755656" sideWeight="0.49461642" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -674,6 +653,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6">
           <caret line="497" column="37" lean-forward="false" selection-start-line="497" selection-start-column="37" selection-end-line="497" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -828,85 +808,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/table/baseTable.js">
+    <entry file="file://$PROJECT_DIR$/src/database/table/Book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/generate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="52" column="35" lean-forward="false" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/uploader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/table/BlackList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <marker date="1496116168000" expanded="true" signature="114:1096" ph="{...}" />
-            <marker date="1496116168000" expanded="true" signature="155:239" ph="[...]" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/table/Book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/api/signIn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/login.ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/api/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/admin.ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        <state relative-caret-position="1012">
+          <caret line="109" column="34" lean-forward="true" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/table/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        <state relative-caret-position="374">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/uploader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/login.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/api/signIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/table/baseTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/api/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/admin.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="90" column="6" lean-forward="true" selection-start-line="90" selection-start-column="6" selection-end-line="90" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/table/BlackList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding />
         </state>
       </provider>
