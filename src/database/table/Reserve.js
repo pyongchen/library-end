@@ -10,16 +10,38 @@ function Reserve() {
     { val: 'user_number', type: 'int', },
     { val: 'book_number', type: 'int', },
     { val: 'reserve_time', type: 'date', },
-    { val: 'isReturn', type: 'int', }
+    { val: 'isReturn', type: 'int'}
   ]
   BaseTable.call(this, name, keys);
 
-  this.getAdminByNumber = function (number) {
-    let query = `select * from ${this.name} where number = ${number}`;
+  this.getAdminByNumber = (number)=> {
+    let query = `select * from ${name} where number = ${number}`;
     return new Promise((resolve, reject) => {
       conn.query(query, (err, res) => {
         if(err) reject(err);
         else resolve(res[0]);
+      })
+    })
+  }
+
+  this.getReserveByUserNumber = (number) => {
+    let query = `select DATE_FORMAT(re.reserve_time, '%Y-%m-%d') as reserve_time, re.isReturn, re.book_number, b.name
+    from ${name} re join book b on re.book_number = b.number and re.user_number = ${number} 
+    order by reserve_time desc`;
+    return new  Promise((resolve, reject) => {
+      conn.query(query, (err, res) => {
+        if(err) reject(err);
+        else resolve(res);
+      })
+    })
+  };
+
+  this.getBackByNumber = (number) => {
+    let query = `update ${name} set isReturn = 1 where book_number = ${number}`;
+    return new Promise((resolve, reject) => {
+      conn.query(query, (err, res) => {
+        if(err) reject(err);
+        else resolve(res);
       })
     })
   }

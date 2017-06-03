@@ -34,11 +34,11 @@ module.exports.reserve = (req, res) => {
 }
 
 // 根据读者编号返回某个读者借阅的所有图书
-module.exports.getReserve = (req, res) => {
-  Reserve.getReserveByUserNumber(req.query.number).then((res) => {
-    return res.json(res);
+module.exports.getReserveHistory = (req, res) => {
+  Reserve.getReserveByUserNumber(req.query.number).then((result) => {
+    return res.json(result);
   })
-}
+};
 
 // 获取所有问题, 先要检查用户是否在黑名单中
 module.exports.getProblems = (req, res) => {

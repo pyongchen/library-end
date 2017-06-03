@@ -37,6 +37,8 @@ app.use(methodOverride());
 app.use(session({     //设置session
   name: 'library',
   secret: 'library',
+  saveUninitialized: true,
+  resave: true,
   cookie: {
     maxAge: 1000* 60* 60 * 2   //过期时间:2小时
   }

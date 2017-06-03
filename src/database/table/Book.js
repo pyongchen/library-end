@@ -19,6 +19,9 @@ function Book() {
   ]
   BaseTable.call(this, name, keys);
 
+  /**
+   *  根据图书编号获取图书
+   */
   this.getOne = (number) => {
     let query = `select * from ${name} where number = ${number}`;
     return new Promise((resolve, reject) => {
@@ -59,6 +62,7 @@ function Book() {
     for(let key in fields) query += (key + "='" + fields[key] + "',")
     query = query.substring(0, query.length - 1)
     query += ' where number = ' + fields.number + ';'
+    console.log(query);
     return new Promise((resolve, reject) => {
       conn.query(query, (err, res) => {
         if(err) reject(err);
@@ -67,8 +71,15 @@ function Book() {
     })
   };
 
-  this.addToBlackList = (number) => {
-
+  // number为图书编号，flag=1表示借阅，0表示归还
+  this.changeReserve = (number, flag) => {
+    let query = `update ${name} set reserved = ${flag} where number = ${number}`;
+    return new Promise((resolve, reject) => {
+      conn.query(query, (err, res) => {
+        if(err) reject(err);
+        else resolve(res)
+      })
+    })
   }
 }
 
