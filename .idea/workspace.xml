@@ -2,36 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="fadd9054-1333-4748-8b48-fdfadb695f48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/database/table/ImgGroup.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/pic9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/李尔王.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/西游记.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/cover/麦克白.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/pdf/三国演义.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/pdf/李尔王.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/pdf/西游记.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/pdf/麦克白.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pm2-app.json" afterPath="$PROJECT_DIR$/pm2-app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/admin.ctrl.js" afterPath="$PROJECT_DIR$/src/controller/admin.ctrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/book.ctrl.js" afterPath="$PROJECT_DIR$/src/controller/book.ctrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/user.ctrl.js" afterPath="$PROJECT_DIR$/src/controller/user.ctrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/table/Book.js" afterPath="$PROJECT_DIR$/src/database/table/Book.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router/api/admin.js" afterPath="$PROJECT_DIR$/src/router/api/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/table/Problem.js" afterPath="$PROJECT_DIR$/src/database/table/Problem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router/api.config.router.js" afterPath="$PROJECT_DIR$/src/router/api.config.router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router/api/books.js" afterPath="$PROJECT_DIR$/src/router/api/books.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tools/uploader.js" afterPath="$PROJECT_DIR$/src/tools/uploader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/generate.js" afterPath="$PROJECT_DIR$/src/utils/generate.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,21 +24,31 @@
     <splitter split-orientation="horizontal" split-proportion="0.4308732">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/router/api/user.js">
+          <file leaf-file-name="user.ctrl.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/controller/user.ctrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                <state relative-caret-position="391">
+                  <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="user.ctrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/controller/user.ctrl.js">
+          <file leaf-file-name="Problem.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/database/table/Problem.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+                <state relative-caret-position="374">
+                  <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BlackList.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/database/table/BlackList.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -71,8 +57,8 @@
           <file leaf-file-name="Reserve.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/database/table/Reserve.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+                <state relative-caret-position="612">
+                  <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -101,8 +87,8 @@
           <file leaf-file-name="books.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/router/api/books.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+                <state relative-caret-position="204">
+                  <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -125,8 +111,8 @@
           <file leaf-file-name="api.config.router.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/router/api.config.router.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+                <state relative-caret-position="102">
+                  <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -135,8 +121,8 @@
           <file leaf-file-name="book.ctrl.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/controller/book.ctrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+                <state relative-caret-position="907">
+                  <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -186,11 +172,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Book.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Book.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/database/table/Book.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="547">
-                  <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+                <state relative-caret-position="494">
+                  <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="express.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/config/express.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="816">
+                  <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -281,16 +287,13 @@
         <option value="$PROJECT_DIR$/src/app/controller/login.ctrl.js" />
         <option value="$PROJECT_DIR$/src/controller/login.ctrl.js" />
         <option value="$PROJECT_DIR$/src/database/table/User.js" />
-        <option value="$PROJECT_DIR$/src/database/table/BlackList.js" />
         <option value="$PROJECT_DIR$/src/database/conn.js" />
         <option value="$PROJECT_DIR$/src/config/express.js" />
         <option value="$PROJECT_DIR$/src/tools/date.js" />
-        <option value="$PROJECT_DIR$/src/controller/user.ctrl.js" />
         <option value="$PROJECT_DIR$/src/router/api/user.js" />
         <option value="$PROJECT_DIR$/src/database/table/Reserve.js" />
         <option value="$PROJECT_DIR$/src/controller/admin.ctrl.js" />
         <option value="$PROJECT_DIR$/src/router/api/admin.js" />
-        <option value="$PROJECT_DIR$/src/router/api/books.js" />
         <option value="$PROJECT_DIR$/yarn.lock" />
         <option value="$PROJECT_DIR$/src/database/table/ImgGroup.js" />
         <option value="$PROJECT_DIR$/static/pdf/t2.txt" />
@@ -298,8 +301,13 @@
         <option value="$PROJECT_DIR$/src/utils/generate.js" />
         <option value="$PROJECT_DIR$/pm2-app.json" />
         <option value="$PROJECT_DIR$/src/tools/uploader.js" />
-        <option value="$PROJECT_DIR$/src/controller/book.ctrl.js" />
+        <option value="$PROJECT_DIR$/src/database/table/Problem.js" />
+        <option value="$PROJECT_DIR$/src/database/table/BlackList.js" />
+        <option value="$PROJECT_DIR$/src/controller/user.ctrl.js" />
         <option value="$PROJECT_DIR$/src/database/table/Book.js" />
+        <option value="$PROJECT_DIR$/src/router/api.config.router.js" />
+        <option value="$PROJECT_DIR$/src/router/api/books.js" />
+        <option value="$PROJECT_DIR$/src/controller/book.ctrl.js" />
       </list>
     </option>
   </component>
@@ -400,45 +408,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library-end" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library-end" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library-end" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library-end" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pdf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -451,10 +427,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -624,7 +596,7 @@
       <workItem from="1494136406134" duration="19309000" />
       <workItem from="1496060025906" duration="21485000" />
       <workItem from="1496308794183" duration="34347000" />
-      <workItem from="1496560542818" duration="5883000" />
+      <workItem from="1496560542818" duration="12045000" />
     </task>
     <task id="LOCAL-00001" summary="添加gulp启动和监听">
       <created>1492408459126</created>
@@ -637,7 +609,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125341000" />
+    <option name="totallyTimeSpent" value="131503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-90" y="-1418" width="2185" height="1418" extended-state="0" />
@@ -666,10 +638,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42125604" sideWeight="0.5050437" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.260181" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31806615" sideWeight="0.49461642" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17243816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22021116" sideWeight="0.49461642" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11090573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -717,13 +689,6 @@
     <entry file="file://$PROJECT_DIR$/static/fish.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/table/Problem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/cover/pic10.png">
@@ -808,31 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/table/BlackList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/conn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/express.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -859,42 +803,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/user.ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/login.ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yarn.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/table/Reserve.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/api.config.router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,6 +860,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pm2-app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1496566013000" expanded="true" signature="0:216" ph="{...}" />
+            <marker date="1496566013000" expanded="true" signature="12:214" ph="[...]" />
+            <marker date="1496566013000" expanded="true" signature="13:213" ph="{&quot;name&quot;: &quot;library&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/admin.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -964,22 +888,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pm2-app.json">
+    <entry file="file://$PROJECT_DIR$/src/controller/login.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <marker date="1496566013000" expanded="true" signature="0:216" ph="{...}" />
-            <marker date="1496566013000" expanded="true" signature="12:214" ph="[...]" />
-            <marker date="1496566013000" expanded="true" signature="13:213" ph="{&quot;name&quot;: &quot;library&quot;...}" />
-          </folding>
+        <state relative-caret-position="476">
+          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/api/books.js">
+    <entry file="file://$PROJECT_DIR$/src/database/table/Problem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="374">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/table/Reserve.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/user.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -994,16 +930,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/table/Book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        <state relative-caret-position="494">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/table/BlackList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/api.config.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/api/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/book.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        <state relative-caret-position="907">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>

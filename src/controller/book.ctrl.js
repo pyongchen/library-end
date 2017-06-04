@@ -88,3 +88,10 @@ module.exports.giveBackByNumber = (req, res) => {
     return res.json({msg: '归还成功！'})
   })
 };
+
+//根据图书编号下载pdf
+module.exports.downloadPDF = (req, res) => {
+  let number = req.body.number
+  res.download(path.join(__dirname, '../../static/pdf', number + '.pdf'))
+};
+

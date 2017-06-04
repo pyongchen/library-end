@@ -15,7 +15,7 @@ function Problem() {
   BaseTable.call(this, name, keys);
 
   // 获取所有问题
-  this.getAll = (number) => {
+  this.getAll = () => {
     let query = `select * from ${name}`;
     return new Promise((resolve, reject) => {
       conn.query(query, (err, res) => {

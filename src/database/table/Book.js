@@ -38,7 +38,7 @@ function Book() {
    * 0->空闲的，1->已经预约的，2->所有图书
    */
   this.getBooks = (flag) => {
-    let query = `select * from ${name}`
+    let query = `select id,number,author,name,publisher,picture,type,DATE_FORMAT(buy_time,'%Y-%m-%d') as buy_time,school from ${name}`
     if(flag != 2) query += ` where reserved = ${flag}`;
     return new Promise((resolve, reject) => {
       conn.query(query, (err, res) => {

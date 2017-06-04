@@ -35,26 +35,28 @@ module.exports.reserve = (req, res) => {
 
 // 根据读者编号返回某个读者借阅的所有图书
 module.exports.getReserveHistory = (req, res) => {
-  Reserve.getReserveByUserNumber(req.query.number).then((result) => {
+  Reserve.getReserveByUserNumber(req.session.user.number).then((result) => {
     return res.json(result);
   })
 };
 
 // 获取所有问题, 先要检查用户是否在黑名单中
 module.exports.getProblems = (req, res) => {
-  // BlackList.inBlackList(req.query.number).then((result) => {
-  //   if(result) {  //返回列表不为空，说明在，获取所有问题并返回
-  //     res.json(result);
-  //   } else {  //不在，直接返回不在信息
-  //     return res.json({msg: true})
-  //   }
-  // })
-  Problem.getAll(req.query.number).then((result) => {
-    result.forEach((item) => {    //对问题的选项进行分割
-      item.selects = item.selects.split(',')
-    })
-    return res.json(result);
-  })
+  BlackList.inBlackList(req.session.user.number).then((result) => {
+    if(result) {  //返回列表不为空，说明在，获取所有问题并返回
+      Problem.getAll().then((result_) => {
+        result_.forEach((item) => {    //对问题的选项进行分割
+          item.selects = item.selects.split(',')
+        });
+        return res.json({
+          problems: result_,
+          message: result.message
+        });
+      })
+    } else {  //不在，直接返回不在信息
+      return res.json({msg: true})
+    }
+  });
 }
 
 module.exports.checkProblems = (req, res) => {
