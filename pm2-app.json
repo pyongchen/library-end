@@ -3,7 +3,7 @@
     "name": "library",
     "script": "./src/server.js",
     "watch": true,
-    "ignore_watch": ["*.log", "yarn.lock", "node_module", "pm2-app.json", ".idea"],
+    "ignore_watch": ["*.log", ".git", "yarn.lock", "node_module", "static", "pm2-app.json", ".idea"],
     "force": true
   }]
 }

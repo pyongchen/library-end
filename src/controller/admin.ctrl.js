@@ -2,8 +2,6 @@ let Admin = require('../database/table/Admin');
 let User = require('../database/table/User');
 let Book = require('../database/table/Book');
 let BlackList = require('../database/table/BlackList');
-let uploader = require('../tools/uploader');
-let format = require('../tools/date').format;
 
 // 判断是否登录
 module.exports.isLogin = (req, res) => {
@@ -48,35 +46,6 @@ module.exports.deleteUser = (req, res) => {
   let number = req.query.number;
   User.deleteUser(number).then(() => {
     return res.json({msg: true});
-  })
-};
-
-// 创建图书
-module.exports.createBook = (req, res) => {
-  uploader.upload(req, (fields) => {
-    if(fields.err) {
-      res.json({err: fields.err})
-    } else {
-      fields.buy_time = format(fields.buy_time)
-      fields.reserved = 0
-      Book.insert([fields]).then(() => {
-        res.json({msg: '添加图书成功'})
-     })
-    }
-  });
-}
-
-// 更新图书
-module.exports.updateBook = (req, res) => {
-  Book.updateBookByNumber(req.body).then(() => {
-    return res.json({msg: '更新成功'});
-  })
-};
-
-// 删除图书
-module.exports.deleteBook = (req, res) => {
-  Book.deleteBookByNumber(req.body.number).then(() => {
-    return res.json({msg: '删除成功'});
   })
 };
 

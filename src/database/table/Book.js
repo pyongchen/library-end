@@ -8,11 +8,11 @@ function Book() {
   let name = 'Book';
   let keys = [
     { val: 'number', type: 'int', },
-    { val: 'author', type: 'varchr(200)', },
-    { val: 'name', type: 'varchr(200)', },
-    { val: 'publisher', type: 'varchr(200)', },
-    { val: 'picture', type: 'varchr(200)', },
-    { val: 'type', type: 'varchr(200)', },
+    { val: 'author', type: 'varchar(200)', },
+    { val: 'name', type: 'varchar(200)', },
+    { val: 'publisher', type: 'varchar(200)', },
+    { val: 'picture', type: 'varchar(200)', },
+    { val: 'type', type: 'varchar(200)', },
     { val: 'reserved', type: 'int', },
     { val: 'buy_time', type: 'date', },
     { val: 'school', type: 'varchar(200)', },
@@ -23,7 +23,8 @@ function Book() {
    *  根据图书编号获取图书
    */
   this.getOne = (number) => {
-    let query = `select * from ${name} where number = ${number}`;
+    let query = `select * from ${name} b join ImgGroup gg on b.number = gg.book_number
+     and number = ${number}`;
     return new Promise((resolve, reject) => {
       conn.query(query, (err, res) => {
         if(err) reject(err);

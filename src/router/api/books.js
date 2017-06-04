@@ -5,6 +5,9 @@ let router = require('express').Router();
 module.exports = () => {
   router.get('/books', book.getBooks);
   router.get('/book', book.getOne);
+  router.post('/admin/createBook', book.createBook),
+  router.post('/admin/updateBook', book.updateBook);
+  router.post('/admin/deleteBook', book.deleteBook);
   router.post('/reserve', book.reserve);
   router.post('/giveBack', book.giveBackByNumber);
   router.post('/file', (req, res) => {
