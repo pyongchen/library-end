@@ -42,7 +42,7 @@ function BlackList() {
         if(err) reject(err);
         else resolve(res);
       })
-    })   
+    })
   };
 }
 

@@ -54,9 +54,9 @@ module.exports.updateBook = (req, res) => {
 
 // 删除图书,同时删除封面、图片组、pdf
 module.exports.deleteBook = (req, res) => {
-  exec("rm -rf ../../static/" + req.number);
-  exec("rm ../../static/cover/" + req.number + '.*');
-  exec("rm ../../static/pdf/" + req.number + '.*');
+  exec("rm -rf ../resource/" + req.body.number);
+  exec("rm ../resource/cover/" + req.body.number + '.*');
+  exec("rm ../resource/pdf/" + req.body.number + '.*');
   Book.deleteBookByNumber(req.body.number).then(() => {
     return res.json({msg: '删除成功'});
   })
@@ -92,6 +92,5 @@ module.exports.giveBackByNumber = (req, res) => {
 //根据图书编号下载pdf
 module.exports.downloadPDF = (req, res) => {
   let number = req.body.number
-  res.download(path.join(__dirname, '../../static/pdf', number + '.pdf'))
+  res.download(path.join(__dirname, '../resource/pdf', number + '.pdf'))
 };
-

@@ -3,7 +3,8 @@ let config = {
   user: 'root',
   password: 'cpy25511211',
   port: '3306',
-  database: 'Library'
+  database: 'library',
+  charset:'UTF8_GENERAL_CI'
 };
 
 module.exports = config;

@@ -5,12 +5,12 @@ let Book = require('../database/table/Book')
 
 module.exports.upload = (req, cb) => {
   let form = new formidable.IncomingForm();
-  form.fileDir = path.join(__dirname, '../../static/cover') //图片存储的文件夹
-  form.pdfDir = path.join(__dirname, '../../static/pdf') //pdf存储的文件夹
+  form.fileDir = path.join(__dirname, '../../src/resource/cover') //图片存储的文件夹
+  form.pdfDir = path.join(__dirname, '../../src/resource/pdf') //pdf存储的文件夹
   form.parse(req, (err, fileds, files) => {
     Book.getOne(fileds.number).then((res) => {
       if (res[0]) return cb({err: '图书编号不能重复'});
-      let imgsDir = path.join(__dirname, '../../static/' + fileds.number);
+      let imgsDir = path.join(__dirname, '../resource/' + fileds.number);
       let urls = '';
       fs.mkdir(imgsDir);
       form.imgsDir = imgsDir
@@ -22,8 +22,9 @@ module.exports.upload = (req, cb) => {
         } else if (key == 'pdf') {
           fs.rename(file.path, path.join(form.pdfDir, fileds.number + '.pdf'));   //保存pdf
         } else {
-          fs.rename(file.path, path.join(form.imgsDir, file.name))  //保存图片组
-          urls += (file.name + '|')
+          let name = fileds.number + new Date().getTime() + '.' + file.name.split('.')[1];
+          fs.rename(file.path, path.join(form.imgsDir, name))  //保存图片组
+          urls += (name + '|')
         }
       }
       cb(fileds, urls);

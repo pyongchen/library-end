@@ -26,7 +26,7 @@ function Reserve() {
 
   this.getReserveByUserNumber = (number) => {
     let query = `select DATE_FORMAT(re.reserve_time, '%Y-%m-%d') as reserve_time, re.isReturn, re.book_number, b.name
-    from ${name} re join book b on re.book_number = b.number and re.user_number = ${number} 
+    from ${name} re join Book b on re.book_number = b.number and re.user_number = ${number} 
     order by reserve_time desc`;
     return new  Promise((resolve, reject) => {
       conn.query(query, (err, res) => {

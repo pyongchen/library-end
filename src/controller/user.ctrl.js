@@ -70,6 +70,9 @@ module.exports.checkProblems = (req, res) => {
         break;
       }
     }
+    if(flag) {
+      BlackList.removeByNumber(req.session.user.number);
+    }
     return res.json({msg: flag})                                                                                                                      
   })
 }

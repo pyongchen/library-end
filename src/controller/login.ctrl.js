@@ -11,7 +11,7 @@ module.exports.signIn = (req, res) => {
   let number = parseInt(req.body.number);
   let password = parseInt(req.body.password);
   if(!Number.isInteger(number)) return res.json({err: '编号必须为数字'})
-  User.getUserByNumber(number).then((result) => {
+  User.checkUserByNumber(number).then((result) => {
     if(!result) {
       res.json({err: '读者标号不存在'})
     } else {
@@ -35,7 +35,7 @@ module.exports.signUp = (req, res) => {
     sex: '男',
     mail: '123123123.com'
   };
-  User.getUserByNumber(user.number).then((result) => {
+  User.checkUserByNumber(user.number).then((result) => {
     if(!result) {
       User.insert([user]).then( ()=> {
         console.log('插入读者:' + req.body.number + '成功');

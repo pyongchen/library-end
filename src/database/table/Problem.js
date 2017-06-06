@@ -16,7 +16,7 @@ function Problem() {
 
   // 获取所有问题
   this.getAll = () => {
-    let query = `select * from ${name}`;
+    let query = `select * from ${name} limit 10`;
     return new Promise((resolve, reject) => {
       conn.query(query, (err, res) => {
         if(err) reject(err);

@@ -17,7 +17,9 @@ app.set('views', path.join(__dirname, '../views'));
 app.engine('html', ejs.__express);
 app.set('view engine', 'html');
 
-app.use('/static', express.static(path.join(__dirname,'../../static')));
+// app.use('/static', express.static(path.join(__dirname,'../../static')));
+app.use('/static', express.static(path.join(__dirname,'../static')));
+app.use('/resource', express.static(path.join(__dirname,'../resource')));
 
 //设置中间件
 // app.use(cors());  //跨域
